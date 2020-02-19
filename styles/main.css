@@ -1,0 +1,190 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-image: url("../images/school_back1.jpg");
+}
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 960px;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+	background-color: white;
+	margin: 15px auto;
+	padding: 0;
+}
+
+/* body */
+
+body h1, h3 {
+	margin: 0;
+	padding: 0;
+}
+body a{
+	text-decoration: none;
+}
+body a:link, main a:visited { 
+    color: black; 
+}
+body a:hover, main a:focus { 
+    color: green;
+}
+
+
+/* header */
+
+header { 
+	background-image: -webkit-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-image: -moz-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-image: -o-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	padding: 15px;
+} 
+header img { 
+	float: left; 
+	padding-right: 15px;
+	opacity: 0.3;
+}
+header img:hover { 
+	opacity: 1;
+}
+
+header .shadow, main .shadow {
+	text-shadow: 4px 4px 4px #24404C;
+}
+/* main */
+main {
+	height: 650px;
+	width: 50%;
+	float: left;
+	background-color: #B2EBF4;
+}
+
+/* navigation */
+#nav_sideA ul li a:hover, #nav_side ul li a:focus,
+#nav_sideB ul li a:hover, #nav_side ul li a:focus,
+#nav_main ul li a:hover, #nav_main ul li a:focus
+{
+	background-color: gray;
+}
+
+/* main navigation */
+
+#nav_main ul{
+	list-style-type: none;
+	margin: auto;
+	list-style: none;
+	position: relative;
+}
+#nav_main ul li{
+	float: left;
+}
+#nav_main ul li a{
+	text-align: center;
+	background-color: #3F0099;
+	display: block;
+	color: white;
+	width: 192px;
+	padding: .5em 0;
+}
+#nav_main ul li a.current{
+	font-weight: bold;
+	color: orange;
+}
+#nav_main ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav_main ul ul li {
+	float: none;
+	position: relative;
+}
+#nav_main ul ul li ul{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+#nav_main ul ul li a{
+	text-align: center;
+	background-color: #3F0099;
+	display: block;
+	color: white;
+}
+#nav_main ul li:hover > ul {
+	display: block;
+}
+#nav_main > ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* left side */
+#sideA {
+	background-color: #FAF4C0;
+	width: 20%;
+	height: 650px;
+	float: left;
+}
+#nav_sideA ul{
+	list-style-type: none;
+	margin: 1em auto;
+}
+#nav_sideA ul li{
+	margin: 1em auto;
+	width: 85%;
+	border:1px solid #FFC19E;
+}
+#nav_sideA ul li img{
+	vertical-align: middle;
+	width: 100%;
+	height: 80px;
+}
+#nav_sideA ul li a{
+	display: block;
+	text-align: center;
+	background-color: #D5D5D5;
+}
+#nav_sideA ul li a.current{
+	font-weight: bold;
+	color: orange;
+}
+
+/* right side */
+#sideB {
+	background-color: #FAF4C0;
+	width: 30%;
+	height: 650px;
+	float: left;
+}
+#sideB h3 {
+	background-color: #8C8C8C;
+	text-align: center;
+	padding: .5em .2em;
+	font-weight: bold;
+}
+#sideB  p, #sideB article {
+	padding: .5em .5em;
+	background-color: #FFB2D9;
+	font-family: Segoe UI Semibold, Arial Black, Verdana, Arial, Helvetica, sans-serif;
+}
+#sideB a{
+	font-weight: bold;
+}
+
+/* footer */
+footer {
+	background-image: -webkit-linear-gradient(45deg, black 0%, orange 75%, white 100%);
+	background-image: -moz-linear-gradient(45deg, black 0%, orange 75%, white 100%);
+	background-image: -o-linear-gradient(45deg, black 0%, orange 75%, white 100%);
+	background-image: linear-gradient(45deg, black 0%, orange 75%, white 100%);
+	padding: 15px;
+	clear: both;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}

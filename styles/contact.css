@@ -1,0 +1,116 @@
+/* main section */
+section {
+	padding: .5em;
+}
+hr {
+	margin-top: .2em;
+}
+section h1 {
+	font-size: 150%;
+}
+section h2 {
+	padding: .5em 0;
+	font-size: 120%;
+}
+section h4 {
+	padding: .5em 0 .2em 0;
+	font-size: 80%;
+}
+section article {
+	padding: .5em 0;
+	font-size: 100%;
+}
+section hr {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+form {
+	margin: .1em auto;
+}
+fieldset {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: .5em;
+}
+legend {
+	color: #931420;
+	font-weight: bold;
+	font-size: 85%;
+	margin-bottom: .5em;
+	text-align: center;
+}
+label, input, select {
+	font-size: 90%;
+}
+textarea {
+	height: 7em;
+	width: 24em;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 1em;
+	margin-bottom: .5em;
+}
+main label {
+	float: left;
+	width: 8em;
+	text-align: right;
+	color: navy;
+	font-weight: bold;
+	vertical-align: middle;
+}
+main input, select {
+	width: 17em;
+	margin-left: 1em;
+	margin-bottom: .5em;
+}
+main input:focus {
+	border: 2px solid navy;
+}
+input:required, input[required] {
+	border: 2px solid pink;
+}
+input:valid {
+	border: 1px solid black
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+	clear: both;
+}
+
+main #button, main #button1 {
+	width: 10em;
+	margin-left: 4em;
+	box-shadow: 2px 2px 0 2px;
+	background-color: silver;
+}
+
+#sideB fieldset {
+	background-color: #FFB2D9;
+}
+#side fieldset legend {
+	font-weight: bold;
+	font-family: "Segoe UI Semibold, Arial Black, Verdana, Arial, Helvetica, sans-serif";
+}
+#sideB label {
+	float: right;
+	width: 15em;
+	text-align: left;
+	vertical-align: middle;
+	color: navy;
+	font-weight: bold;
+	font-family: "Segoe UI Semibold, Arial Black, Verdana, Arial, Helvetica, sans-serif";
+}
+#sideB input {
+	width: 2em;
+	margin-left: .1em;
+	margin-bottom: .5em;
+}
+#sideB #sbutton, #sideB #sbutton1 {
+	width: 10em;
+	margin-left: 4em;
+	box-shadow: 2px 2px 0 2px;
+	background-color: #BDBDBD;
+	font-family: "Segoe UI Semibold, Arial Black, Verdana, Arial, Helvetica, sans-serif";
+}

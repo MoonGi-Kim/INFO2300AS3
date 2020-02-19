@@ -1,0 +1,86 @@
+/* main section */
+section {
+	padding: .5em;
+}
+hr {
+	margin-top: 1em;
+}
+section h1 {
+	font-size: 150%;
+}
+section h2 {
+	padding: .5em 0;
+	font-size: 120%;
+}
+section h4 {
+	padding: .2em 0;
+}
+section hr {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+section caption {
+	padding: .5em;
+	font-size: 120%;
+	font-weight: bold;
+}
+section article {
+	padding: .5em 0;
+	font-size: 100%;
+}
+section table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+section table th {
+	padding: .7em .2em;
+	font-size: 90%;
+	background-color: purple;
+}
+section table td {
+	padding: .2em;
+	font-size: 85%;
+}
+section table tbody td:nth-of-type(1) {
+	text-align: center;
+	width: 29%;
+}
+section table tbody td:nth-of-type(2) {
+	padding-left: .5em;
+	width: 22%;
+}
+section table tbody td:nth-of-type(3) {
+	padding-left: .5em;
+}
+
+section table tbody tr:nth-of-type(odd) {
+	background-color: gray;
+}
+section table tbody tr:nth-of-type(even) {
+	background-color: silver;
+}
+
+section .book {
+	border: 1px solid #670000;
+	margin: .5em 0;
+	width: 30%;
+	height: 120px;
+}
+section .evaluation {
+	border: 1px solid #670000;
+	margin: .5em 0;
+	width: 60%;
+	height: 120px;
+}
+section .book:hover {
+	width: 200px;
+	height: 230px;
+}
+section .evaluation:hover {
+	width: 450px;
+	height: 230px;
+}
+section b.grade {
+	color: red;
+}

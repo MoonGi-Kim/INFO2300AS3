@@ -1,0 +1,42 @@
+/* main section */
+section {
+	padding: .5em;
+}
+hr {
+	margin-top: .2em;
+}
+section h1 {
+	font-size: 150%;
+}
+section h2 {
+	padding: .5em 0;
+	font-size: 120%;
+}
+section h4 {
+	padding: .5em 0 .2em 0;
+	font-size: 80%;
+}
+section hr {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+section p {
+	padding: .5em 0;
+	font-size: 100%;
+}
+section caption {
+	padding: .5em;
+	font-size: 80%;
+	font-weight: bold;
+}
+section caption a {
+	font-size: 80%;
+}
+section article {
+	padding: .5em 0;
+	font-size: 100%;
+}
+section article ul {
+	padding-left: 2em;
+}

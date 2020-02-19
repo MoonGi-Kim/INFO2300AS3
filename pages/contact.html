@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CPA Programs</title>
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/contact.css">
+		<link rel="icon" type="image/ico" href="../images/moon_logo3.png">
+		<script>
+function Alert() {
+	if (email.value == "") return;
+	if (firstname.value == "") return;
+	if (familyname.value == "") return;
+
+	var city = "";
+	var element = document.getElementById("city");
+	for(var i=0; i < element.options.length; i++) {
+		if (element.options[i].selected == true) {
+			if (i > 0 ) city  += ",";
+			city += element.options[i].value;
+		}
+	}
+
+	var province = "";
+	var element = document.getElementById("province");
+	for(var i=0;i<element.options.length; i++) {
+		if (element.options[i].selected == true) {
+			province = element.options[i].value;
+		}
+	}
+
+	alert("E-mail: " + email.value
+		+ " First Name: " + firstname.value
+		+ " Middle Name: " + middlename.value
+		+ " Family Name: " + familyname.value
+		+ " City: " + city
+		+ " Province: " + province
+	);
+	alert("Transfer the information successfully!");
+	/* window.open("contact.html"); */
+	document.location = "contact.html";
+}
+function Alert1() {
+	alert("Thank you for responding!");
+	document.location = "contact.html";
+}
+		</script>
+	</head>
+	<body>
+		<header>
+			<img src="../images/logo_contact.jpg" alt="logo_contact" width="60" height="60">
+			<h1>CPA Programs - <em class="shadow">Contact US</em></h1>
+			<h3>Welcome <em class="shadow">any Question</em></h3>
+		</header>
+		<nav id="nav_main">
+			<ul>
+				<li><a href="../index.php">Home</a></li>
+				<li><a href="prog1245.html">PROG1245</a>
+					<ul>
+						<li><a href="#">Introduction</a></li>
+						<li><a href="#">Contents</a>
+							<ul>
+								<li><a href="#">Week 1</a></li>
+								<li><a href="#">Week 2</a></li>
+								<li><a href="#">Week 3</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="prog1780.html">PROG1780</a></li>
+				<li><a href="math1910.html">MATH1910</a></li>
+				<li><a href="contact.html" class="current">Contact US</a></li>
+			</ul>
+		</nav>
+		<aside id="sideA">
+			<nav id="nav_sideA">
+				<ul>
+					<li><a href="../index.html"><img src="../images/schoolbus2.jpg" alt="schoolbus2"></a><a href="../index.html">Home</a></li>
+					<li><a href="prog1245.html"><img src="../images/PROG1245.jpg" alt="PROG1245"></a><a href="prog1245.html">PROG1245</a></li>
+					<li><a href="prog1780.html"><img src="../images/prog1780.jpg" alt="prog1780"></a><a href="prog1780.html">PROG1780</a></li>
+					<li><a href="math1910.html"><img src="../images/math1910.jpg" alt="maht1910"></a><a href="math1910.html">MATH1910</a></li>
+					<li><a href="contact.html"><img src="../images/moon_logo1.png" alt="logo"></a><a href="contact.html" class="current">Contact Us</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<main>
+			<section>
+				<h1>Contact US</h1>
+				<article>Please share your comments and suggestions with me.</article>
+				<hr/>
+				<h4>Who are you? and Feedback</h4>
+				<form name="uploadform" action="contact.html" method="post" enctype="multipart/form-data">
+					<fieldset>
+						<legend>Registration Information</legend>
+						<label for="email">E-Mail:</label>
+						<input type="email" name="email" id="email" autofocus required><br>
+						<label for="firstname">First Name:</label>
+						<input type="text" name="firstname" id="firstname" required><br>
+						<label for="middlename">Middle Name:</label>
+						<input type="text" name="middlename" id="middlename"><br>
+						<label for="familyname">Family Name:</label>
+						<input type="text" name="familyname" id="familyname" required><br>
+						<label for="city">City:</label>
+						<select name="city" id="city" size="4" multiple>
+							<option value="Toronto">Toronto</option>
+							<option value="Cambridge">Cambridge</option>
+							<option value="Kitchener">Kitchener</option>
+							<option value="London">London</option>
+							<option value="Waterloo">Waterloo</option>
+						</select><br/>
+						<label for="province">Province:</label>
+						<select name="province" id="province" size="4">
+							<optgroup label="East">
+								<option value="ON">Ontario</option>
+								<option value="QC">Quebec</option>
+								<option value="PE">PEI</option>
+								<option value="NB">New Brunswick</option>
+								<option value="NS">Nova Scotia</option>
+								<option value="NL">Newfoundland and Labrador</option>
+							</optgroup>
+							<optgroup label="West & Middle">
+								<option value="BC">British Columbia</option>
+								<option value="AB">Alberta</option>
+								<option value="SK">Saskatchewan</option>
+								<option value="MB">Manitoba</option>
+							</optgroup>
+							<optgroup label="Territories">
+								<option value="YT">Yukon</option>
+								<option value="NT">Nothwest Territories</option>
+								<option value="NU">Nunavut</option>
+							</optgroup>
+						</select><br/>
+						<label for="comments">Comments:</label>
+						<textarea name="comments" id="comments" placeholder="if you have any comments, please enter them here.">
+						</textarea>
+					</fieldset>
+					<p><input type="submit" onclick="Alert();" name="submit" id="button" value="Submit"><input type="reset" id="button1" name="reset" value="Reset"></p>
+				</form>
+				<hr/>
+			</section>
+		</main>
+		<aside id="sideB">
+			<section>
+				<h3>What did You feel</h3>
+				<form>
+					<fieldset>
+						<legend>My homepage is:</legend>
+						<input type="radio" name="opinion" id="radio1" value="Excellent">
+						<label for="radio1">Excellent</label><br>
+						<input type="radio" name="opinion" id="radio2" value="Good">
+						<label for="radio2">Good</label><br>
+						<input type="radio" name="opinion" id="radio3" value="Normal">
+						<label for="radio3">Normal</label><br>
+						<input type="radio" name="opinion" id="radio4" value="Need Improvement">
+						<label for="radio4">Need Improvement</label><br>
+					</fieldset>
+					<fieldset>
+						<legend>What were impressed:</legend>
+						<input type="checkbox" name="opinion" id="checkbox1" value="home">
+						<label for="checkbox1">Home Page</label><br>
+						<input type="checkbox" name="opinion" id="checkbox2" value="prog1245">
+						<label for="checkbox2">PROG1245</label><br>
+						<input type="checkbox" name="opinion" id="checkbox3" value="prog1780">
+						<label for="checkbox3">PROG1780</label><br>
+						<input type="checkbox" name="opinion" id="checkbox4" value="math1910">
+						<label for="checkbox4">MATH1910</label><br>
+						<input type="checkbox" name="opinion" id="checkbox5" value="contact">
+						<label for="checkbox5">Contact Us</label><br>
+					</fieldset>
+					<p>
+						<input type="submit" id="sbutton" onclick="Alert1();" name="submit" value="Send Email"><br>
+						<input type="reset"  id="sbutton1" name="reset" value="Cancel">
+					</p>
+				</form>
+			</section>
+		</aside>
+	  <footer>
+		<p>&copy; 2017 CPA Programs - Created by Moon</p>
+	  </footer>
+	</body>
+</html>
