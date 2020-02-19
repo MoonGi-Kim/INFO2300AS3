@@ -36,7 +36,7 @@
 		<aside id="sideA">
 			<nav id="nav_sideA">
 				<ul>
-					<li><a href="index.html"><img src="images/schoolbus2.jpg" alt="schoolbus2"></a><a href="index.html" class="current">Home</a></li>
+					<li><a href="index.php"><img src="images/schoolbus2.jpg" alt="schoolbus2"></a><a href="index.php" class="current">Home</a></li>
 					<li><a href="pages/prog1245.html"><img src="images/PROG1245.jpg" alt="PROG1245"></a><a href="pages/prog1245.html">PROG1245</a></li>
 					<li><a href="pages/prog1780.html"><img src="images/prog1780.jpg" alt="prog1780"></a><a href="pages/prog1780.html">PROG1780</a></li>
 					<li><a href="pages/math1910.html"><img src="images/math1910.jpg" alt="maht1910"></a><a href="pages/math1910.html">MATH1910</a></li>
