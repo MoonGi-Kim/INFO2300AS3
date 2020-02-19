@@ -24,3 +24,7 @@ How to Deployment this web page
   : Click open app in HEROKU
 
 5. confirm web page
+  : open web service
+    - https://info2300.herokuapp.com/index.php
+    
+--END--
