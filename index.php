@@ -15,7 +15,7 @@
 		</header>
 		<nav id="nav_main">
 			<ul>
-				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href="index.php" class="current">Home</a></li>
 				<li><a href="pages/prog1245.html">PROG1245</a>
 					<ul>
 						<li><a href="#">Introduction</a></li>
