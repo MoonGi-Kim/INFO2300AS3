@@ -1,3 +1,8 @@
+@Copyright 2020-2021 Moon Kim at Conestoga College
+
+This product includes software developed at
+Conestoga College (http://www.conestoga.on.ca/).
+
 # INFO2300AS3
 indivisual assignment3
 
@@ -8,6 +13,7 @@ Created: 2020.02.19
 Owner: Moon Kim, Computer Programming / Analysis, Conestoga College
 How to Deployment this web page
 
+[Project deployment]
 1. Go to GiHub service
   : https://github.com/MoonGi-Kim/INFO2300AS3
 2. Change Sources
